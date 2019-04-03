@@ -53,7 +53,7 @@ SSH port was changed to 2200.
 Firewalls were updated to only allow access on ports 2200, 80, and 123.
 
 
-## Code 
+## Third-Party Code 
 The code for the application itself can be found in this repo: https://github.com/StephenGnoza/ultramarathoncatalogue
 
 
