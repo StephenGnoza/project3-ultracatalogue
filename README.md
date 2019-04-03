@@ -56,7 +56,7 @@ PermitRootLogin no
 ```
 
 ### Enforce Key-based Authentication
-Key-based authentication is enforced by changing the PasswordAuthenitcation line in /etc/ssh/sshd_config to:
+Key-based authentication is enforced by changing the PasswordAuthentication line in /etc/ssh/sshd_config to:
 
 ```
 PasswordAuthentication no
