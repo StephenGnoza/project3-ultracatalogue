@@ -7,7 +7,7 @@ This deploys a basic database-driven website for cataloguing ultramarathons.
 The application is coded in Python and runs on Ubuntu on an AWS Lightsail server.
 
 ## Public IP and SSH Port
-The application can be accessed at http://18.208.146.24 SSH post is 2200.
+The application can be accessed at http://18.208.146.24 SSH port is 2200.
 
 ### Software Installed
 The following software is installed
@@ -83,8 +83,11 @@ sudo ufw enable
 ```
 
 ## Third-Party Code 
-The code for the application itself can be found in this repo: https://github.com/StephenGnoza/ultramarathoncatalogue
+The code for the application itself can be found in this repo: 
 
+```
+https://github.com/StephenGnoza/ultramarathoncatalogue
+```
 
 ## Author
 Stephen Gnoza
