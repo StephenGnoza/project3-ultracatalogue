@@ -47,17 +47,45 @@ Werkzeug==0.15.0
 ```
 
 ## Configuration Changes
-Root SSH access was disabled.
-Key-based authentication is enforced.
-SSH port was changed to 2200.
+
+### Disable Root SSH Access
+Root SSH access was disabled by changing the PermitRootLogin line  in /etc/ssh/sshd_config to:
+
+```
+PermitRootLogin no
+```
+
+### Enforce Key-based Authentication
+Key-based authentication is enforced by changing the PasswordAuthenitcation line in /etc/ssh/sshd_config to:
+
+```
+PasswordAuthentication no
+```
+
+### Changed SSH Port to 2200
+SSH port was changed to 2200 by changing the Port line in /etc/ssh/sshd_config to:
+
+```
+Port 2200
+```
+
+### Updated Firewall Settings
 Firewalls were updated to only allow access on ports 2200, 80, and 123.
 
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh
+sudo ufw allow 2200
+sudo ufw allow 80
+sudo ufw allow 123
+sudo ufw enable
+```
 
 ## Third-Party Code 
 The code for the application itself can be found in this repo: https://github.com/StephenGnoza/ultramarathoncatalogue
 
 
 ## Author
-
 Stephen Gnoza
 stephen.gnoza@gmail.com
