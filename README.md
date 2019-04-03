@@ -3,6 +3,9 @@
 ## Overview
 This deploys a basic database-driven website for cataloguing ultramarathons.  
 
+## Server
+The application is coded in Python and runs on Ubuntu on an AWS Lightsail server.
+
 ## Public IP and SSH Port
 The application can be accessed at http://18.208.146.24 SSH post is 2200.
 
