@@ -45,8 +45,9 @@ Werkzeug==0.15.0
 
 ## Configuration Changes
 Root SSH access was disabled.
-Password logins were disabled.
+Key-based authentication is enforced.
 SSH port was changed to 2200.
+Firewalls were updated to only allow access on ports 2200, 80, and 123.
 
 
 ## Code 
